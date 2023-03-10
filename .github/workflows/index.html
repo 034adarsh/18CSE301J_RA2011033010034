@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <h1>18CSE301J - INFORMATION VISUALIZATION</h1>
+    <h2>Visualization Of Benford's Law</h2>
+    <p>This Project contains a visualization of Benford's Law. I have taken stock market data of Adani enterprises for the year 2022 to compare it with Benford's law graph.</p>
+    <h3>What is Benford's Law</h3>
+    <p>Benford's law, also known as the first-digit law, is a statistical principle that states that in many naturally occurring datasets, the first digit of a number is more likely to be small than large. Specifically, the law predicts that the digit 1 will appear as the first digit about 30% of the time, while the digit 9 will appear as the first digit less than 5% of the time.</p>
+
+    <p>One interesting application of Benford's law is in fraud detection. If a dataset deviates significantly from the expected distribution of first digits, it may be an indication that the data has been manipulated or fabricated. For example, if a company's financial statements show an unusually high proportion of numbers starting with the digit 9, it could be a red flag for fraudulent activity.</p>
+    <h3>Benfod's Law Graph</h3>
+    <img src = "benford.jpeg" alt="benfords test">
+    <h3>Tableau Dashboard</h3>
+    <div class='tableauPlaceholder' id='viz1677729517062' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BenfordsLawTest&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BenfordsLawTest&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BenfordsLawTest&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1677729517062');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p>The above graph shows the percentage deviation from the Benfod's law. I have taken only two columns from the dataset and those are: the no. of shares and the deliverable quantity. No. of shares refers to the volume of trade on a perticular day and deliverable quantity is the total no. of shares delivered to the investors.</p>
+    <h3>For Example</h3>
+    <p>When in the same example you have three players A, B, C</p>
+    <p>Transaction 1: A buys 100 shares, B sells 100 shares</p>
+    <p>Volume = 100</p>
+    <p>Transaction 2 = A sells 70 shares, C buys 70 shares</p>
+    <p>Volume = 70</p>
+    <p>Total day transaction = 100 + 70 = 170</p>
+    <p>A buys 30 shares in delivery (100-70)</p>
+    <p>B sells 100 shares in delivery and C buys 70 shares in delivery</p>
+    <p>So A and C buys 100 (30+70) in delivery, B sells 100 shares in delivery</p>
+    <hr>
+</body>
+</html>
